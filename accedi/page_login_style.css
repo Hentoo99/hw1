@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    font-size: 16px;
+    background-color: rgb(186, 213, 224);
+
+}
+
+header{
+    background-image: url("immagini/Piscina2.jpg");
+    background-size: cover;
+    height: 100px;
+    
+}
+
+ header div{
+    color: white;
+    font-size: 4em;
+    font-style: italic;
+    font-weight: bold;
+}
+#menu{
+    background-color: rgba(37, 37, 201);
+    height: 64px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+nav a{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: whitesmoke
+}
+
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+#overlay{
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+footer {
+    background-color: rgb(31, 29, 29);
+    height: 200px;
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.profilo{
+    height: 6em;
+    border-radius: 50%;
+}
+
+/* Menu*/
+
+
+#menuacomparsa{
+    display: none;
+   
+}
+
+#overlay {
+    justify-content: space-around;
+}
+div#menuacomparsa div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media(max-width: 800px){
+    #menuacomparsa{
+        display: block;
+        }
+        #menu{
+            display: none;
+    
+            height: 500px;
+            width: 100%; 
+        }
+        
+        .scorrimento{
+            overflow: hidden;
+        }
+        .class{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+}
+section div{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+  
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 5px 0;
+}
+  
+  
+input {
+    margin-left: 0.5em;
+}
+
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+div.check{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.check p{
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.done{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(18, 236, 18);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.hidden{
+    display: none;
+}
+form{
+    display: inline-grid;
+    justify-content: left;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section img{
+    height: 100px;
+}
